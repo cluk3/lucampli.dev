@@ -5,10 +5,23 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>lucampli.dev</title>
 	</head>
-	<body>
+	<body data-theme="pastel">
+		<nav class="navbar">
+			<div class="navbar-start pl-6">
+				<a class="navbar-brand" href="/">
+					<span class="text-3xl font-bold">lucampli.dev</span>
+				</a>
+			</div>
+			<ul class="navbar-end menu menu-horizontal">
+				<li><a class="navbar-item" href="/about/">About</a></li>
+				<li><a class="navbar-item" href="/blog/">Blog</a></li>
+			</ul>
+		</nav>
+		<div class="container mx-auto p-8">
 		<slot />
+	</div>
 	</body>
 </html>
 
